@@ -9,5 +9,16 @@ public class GitHubDay1{
 		list1.add(i);
 		list2.add(i);
 	}
+
+	System.out.println(joinLists(list1, list2));
+	}
+
+	public static ArrayList<Integer> joinLists(ArrayList<Integer> a, ArrayList<Integer> b){
+		ArrayList<Integer> totallist = new ArrayList<>();
+		for(int i = 0; i < a.size(); i++){
+			totallist.add(a.get(i));
+			totallist.add(b.get(i));
+		}
+		return totallist;
 	}
 }
